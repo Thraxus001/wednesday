@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: wednesday-ai
+Version: 0.1.0
+Summary: A human-like cognitive AI with Wednesday Addams' personality
+Author-email: Wednesday AI Team <team@wednesday.ai>
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: pydantic-settings>=2.0
+
+# Wednesday AI 🎭
+
+A human-like cognitive AI with Wednesday Addams' personality - deadpan humor, dark wit, and analytical curiosity.
+
+## 🚀 Quick Start
+
+```bash
+# Install in development mode
+pip install -e .
+
+# Start interactive mode
+wednesday --interactive
+
+# Or use in Python
+from wednesday import quick_start
+wed = quick_start()
+response = wed.process_input("Hello, Wednesday!")
+print(response)

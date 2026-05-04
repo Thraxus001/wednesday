@@ -1,0 +1,58 @@
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.0
+pydantic-settings>=2.0
+msgpack>=1.0.0
+toml>=0.10.2
+cryptography>=41.0.0
+numpy>=1.24.0,<=1.26.4
+opencv-python-headless>=4.8.0
+
+
+
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.0
+pydantic-settings
+# requirements.txt for Wednesday AI - Conflicts RESOLVED
+
+# QUICK START:
+# pip install -r requirements-core.txt   # Core deps (Python 3.14 compatible)
+ pip install -e .                       # Editable project install (core deps)
+
+ ML deps commented out (use conda Python 3.11 env):
+# See requirements-ml.txt when created
+
+# Core dependencies (from pyproject.toml)
+pyyaml>=6.0          # YAML parsing/serialization
+python-dotenv>=1.0.0 # Environment variable loading
+msgpack>=1.0.0       # Binary serialization (high performance)
+toml>=0.10.2         # TOML file support
+
+ Optional but recommended
+cryptography>=41.0.0 # Encryption/decryption support
+
+ Performance optimizations (optional)
+ orjson>=3.9.0      # Fast JSON (alternative to built-in)
+ ujson>=5.8.0       # Ultra JSON (alternative to built-in)
+ PyYAML>=6.0        # Already included above
+
+ Development/testing (optional)
+pytest>=7.4.0        # For running tests
+pytest-cov>=4.1.0    # Test coverage
+ Legacy duplicate deps (use requirements-core.txt or pyproject.toml)
+ pyyaml
+ python-dotenv
+ pydantic
+ pydantic-settings
+ spacy - heavy NLP (optional)
+ textblob - sentiment (optional, use vaderSentiment alternative)
+# face-recognition - requires tensorflow/dlib (unavailable)
+opencv-python
+ Phase 3 - Emotion
+ numpy>=2.1.0 (downgraded in requirements-core.txt for compat)
+ Data/ML (optional, conflicts possible)
+ scipy>=1.13.0
+ pandas>=2.2.2
+ matplotlib>=3.9.0
+# deepface>=0.0.92  # More reliable for facial emotion detection - requires tensorflow (unavailable on Python 3.14 Windows)
