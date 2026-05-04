@@ -56,3 +56,12 @@ opencv-python
  pandas>=2.2.2
  matplotlib>=3.9.0
 # deepface>=0.0.92  # More reliable for facial emotion detection - requires tensorflow (unavailable on Python 3.14 Windows)
+
+# Phase 5 - Cognition
+numpy>=1.24.0          # Core operations
+scipy>=1.10.0          # Optimization
+networkx>=3.0          # For causal graphs and concept networks
+pydot>=1.4.0           # Graph visualization
+sympy>=1.11.0          # Symbolic mathematics
+pgmpy>=0.1.0           # Probabilistic graphical models
+scikit-learn>=1.2.0    # For pattern matching
